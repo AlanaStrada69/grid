@@ -10,24 +10,54 @@ body{
 
 header{
      grid-area: cabeca;
-     background-color: blue;
+     background-color: rgb(226, 238, 56);
 }
 
 aside{
     grid-area: braco;
-    background-color: purple;
+    background-color: rgb(6, 148, 25);
 }
 
 main{
     grid-area: corpo;
-    background-color: green;
+    background-color: rgb(18, 48, 182);
 }
 
 footer{
     grid-area: perna;
-    background-color: brown;
+    background-color: rgb(247, 4, 4);
 }
 
+.card{
+    border: black 2px solid;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 2opx;
+}
+
+.mae{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_card{
+    width: 300px;
+    height: auto;
+}
+
+.texto_card{
+    color: black;
+    font-size: x-large;
+}
+
+.preco_car{
+    color: black;
+    font-size: xx-large;
+}
     
     
     
