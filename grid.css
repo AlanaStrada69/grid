@@ -4,37 +4,44 @@ body{
      "cabeca cabeca cabeca"
      "braco corpo corpo"
      "perna perna perna";
-    grid-template-rows: 200px 600px 150px;
+    grid-template-rows: 200px auto 150px;
     grid-template-columns: 200px auto auto;
 }
 
 header{
      grid-area: cabeca;
-     background-color: rgb(226, 238, 56);
+     background-color: rgba(245, 245, 245, 0.877);
+}
+
+.logo{
+    grid-area: logo;
+    height: 200px;
+    width: auto;
 }
 
 aside{
     grid-area: braco;
-    background-color: rgb(6, 148, 25);
+    background-color: rgb(68, 70, 68);
 }
 
 main{
     grid-area: corpo;
-    background-color: rgb(18, 48, 182);
+    background-color: rgb(235, 235, 235);
 }
 
 footer{
     grid-area: perna;
-    background-color: rgb(247, 4, 4);
+    background-color: rgb(255, 255, 255);
 }
 
 .card{
     border: black 2px solid;
-    width: 400px;
+    width: 300px;
     padding: 20px;
     text-align: center;
     border-radius: 15px;
-    margin: 2opx;
+    margin: 20px;
+    background-color: rgb(72, 123, 233);
 }
 
 .mae{ 
