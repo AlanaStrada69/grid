@@ -10,38 +10,68 @@ body{
 
 header{
      grid-area: cabeca;
-     background-color: rgba(245, 245, 245, 0.877);
+     background-color: rgba(252, 252, 252, 0.877);
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+#header-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas: "logo titulo nada";
+}
+
+.header-text {
+    grid-area: titulo;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .logo{
     grid-area: logo;
-    height: 200px;
+    height: 400px;
     width: auto;
+}
+
+header h1 {
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+header h2 {
+    font-size: x-large;
+    margin-top: 85px;
+}
+
+header h3 {
+    font-size: medium;
+    margin-top: 115px;
 }
 
 aside{
     grid-area: braco;
-    background-color: rgb(68, 70, 68);
+    background-color: rgb(105, 111, 114);
 }
 
 main{
     grid-area: corpo;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(155, 171, 175);
+    padding: 20px;
 }
 
 footer{
     grid-area: perna;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(81, 83, 83);
 }
 
 .card{
-    border: black 2px solid;
-    width: 300px;
-    padding: 20px;
+    border: rgb(0, 0, 0) 2px solid;
+    width: 400px;
+    padding: 25px;
     text-align: center;
     border-radius: 15px;
-    margin: 20px;
-    background-color: rgb(72, 123, 233);
+    margin: 25px;
+    background-color: rgb(250, 250, 250);
 }
 
 .mae{ 
@@ -52,18 +82,39 @@ footer{
 }
 
 .img_card{
-    width: 300px;
-    height: auto;
+    width: 400px;
+    height: 400px;
 }
 
 .texto_card{
     color: black;
     font-size: x-large;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .preco_car{
     color: black;
     font-size: xx-large;
+}
+
+@media only screen and (max-width:1000px) {
+    .logo {
+         visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    body {
+         grid-template-areas: "cabeca"
+                              "corpo"
+                              "perna";
+        grid-template-columns: auto;
+        grid-template-rows: 200px auto 200px;
+    }
+    aside {
+        display: none;
+    }
 }
     
     
